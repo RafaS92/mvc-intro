@@ -1,0 +1,5 @@
+<h1><%= @single_airline.name %></h1>
+
+<%@single_airline.tickets.each do |ticket| %>
+    <a><%= ticket.departure_city%>-<%=ticket.destination_city%></a><br>
+    <% end %>
